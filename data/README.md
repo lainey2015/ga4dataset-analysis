@@ -1,0 +1,1 @@
+Original data is too slow to be read because of chunk format, so compact for the next processing
