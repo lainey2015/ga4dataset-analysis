@@ -5,6 +5,7 @@ Nothing is tracked by git except this README file.
 - `processed_data/ga4_events_compact.parquet`: by `python -m ga4case.prepare_data`.
 - `processed_data/events_flattened.parquet`: one row one event, by `python -m ga4case.flatten_events`.
 - `processed_data/sessions.parquet`: one row per visit, by `python -m ga4case.build_sessions`.
+- `processed_data/users.parquet`: one row per user, by `python -m ga4case.build_users`.
 
 # Advantages of compacting
 The original parquet file splits 4,295,584 rows into 33,627 chunk up to 128 rows. With 94 columns, there will be around 3.2M index entries and a query takes about 18s. 

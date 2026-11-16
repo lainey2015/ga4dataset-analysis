@@ -26,9 +26,12 @@ The data is not included in repo. Run the following steps in order.
 python -m ga4case.flatten_events
 ```
 
-3. Build session table: one row per visit
+3. Build sessions table: one row per visit
 ```
 python -m ga4case.build_sessions
 ```
-
-4. Run 'analysis_notebooks' in the numbered order.
+4. Build users table: one row per user
+```
+python -m ga4case.build_users
+```
+5. Run 'analysis_notebooks' in the numbered order.

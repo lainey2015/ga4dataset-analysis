@@ -6,3 +6,5 @@ COMPACT_DATA = ROOT / "data/processed_data/ga4_events_compact.parquet"
 EVENTS_FLATTENED = ROOT / "data/processed_data/events_flattened.parquet"
 SESSIONS = ROOT / "data/processed_data/sessions.parquet"
 FIGURES = ROOT / "reports/figures"
+USERS = ROOT / "data/processed_data/users.parquet"
+
