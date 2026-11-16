@@ -40,6 +40,9 @@ flattened_sql = f"""
         nullif(ecommerce.transaction_id, '(not set)') as transaction_id 
     from src
     """
+# About transaction_id: '(not set)' is a placeholder for missing values in GA4,  we will replace it with NULL, otherwise when counting
+# distinct transaction_id, it will be counted as a valid transaction_id.
+
 
 # 3. Create the table
 
