@@ -13,5 +13,5 @@
 
 ## Outcome:
 - Come back: a later revisit with a page view  within 7 days after the first visit.
-- Purchase later: a later visit within 7 days and ended with a purchase after the first visit.
+- Purchase later: a later visit with a purchase within 7 days after the first visit.
 
