@@ -1,4 +1,4 @@
-# Case study provided by ATG  
+# Case study  
 Public dataset: three months of GA4 web events from November 2020 to January 2021 
 
 **Main questions** 
@@ -62,3 +62,5 @@ python -m ga4case.build_sessions
 python -m ga4case.build_users
 ```
 5. Run 'analysis_notebooks' in the numbered order.
+
+6. Tested with a run from a fresh clone.

@@ -42,7 +42,8 @@ def load_first_visits(start, end):
         where first_session_number = 1
             and purchased_in_first_visit = 0
             and first_visit_start >= timestamp '{start}'
-            and first_visit_start < timestamp '{end}'  
+            and first_visit_start < timestamp '{end}'
+        order by user_pseudo_id  
 """).df()
 
 
