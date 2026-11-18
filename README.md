@@ -13,10 +13,14 @@ Public dataset: three months of GA4 web events from November 2020 to January 202
     - Plan before test: `Predict_analysis_plan.md` was committed (`a7268ca`) before the January test (`e12a574`).
     - January testing result: flagged users purchased later showed 4.86 times as often as the average and flagged come_back showed 2.08 times as often as the average.
 - **Predictive, not causal:** modeling results only showed who is likely to come back or purchase, but not the reason of their behaviours.
-- **Error page: a sign, not a proven causel:** 1 of 5573 visits met an error had a purchase, while other visits have much higher purchase rate: 1.46% vs 0.02%.
+- **Error page: a sign, not a proven cause:** 1 of 5573 visits met an error had a purchase, while other visits have much higher purchase rate: 1.46% vs 0.02%.
     - Test_1 showed that among users who came back with no error page in the first visit: users who met an error in later visit is far lower than who did not met an error regarding to the purchase rate in the first visit (0.2% vs 2.32%).
     - Test_2 showed that in visits with no less than 4 pages viewed without an error page: the purchase from visitors who met an error page in another visit is far lower than that of visitors who did not met an error (1.06% vs 8.76%). And splitting of the met an error visits, it showed that purchase before or after the error met both showed very lower rate (0.67% and 1.50%), so this gap is not caused by error page.
-    - Error met groups seldom buy but it did not prove that error page cost sales. More expriments are in need to test the effect.
+    - Error met groups seldom buy but it did not prove that error page cost sales. More experiments are in need to test the effect.
+- **What product team can change:** New users who land on Home viewed a product accounts for 26.1% while 11.3% of those who land on the entrance page 'Google Online Store'. This gap cannot be read as the effect of the page, because different users land on different pages. Thus, a test is needed.
+    - Test designed: new users who land on the entrance page are randomly splitting into two groups 50% vs 50% and the treated group is sent to Home to measure how many viewed a product in the first visit. 3342 users per group for a 20% relative lift (5% significance, 80% power, two sided) for two full weeks.
+    - Purchases would need 200 days as the main measure so it will be tracked to ensure not get worse.
+    - 'Google Dino Game Tee' page increased sharply from 30 per day in November to 480 per day in mid of December and this is a point to check for more information before a test.
 
 ## Repository guide on notebooks
 - 01_dataExp_QC: flat events table
@@ -27,6 +31,7 @@ Public dataset: three months of GA4 web events from November 2020 to January 202
 - 06_Predict_analysis: rule, Logistic regression and XGBoost on train/validation data
 - 07_January_test: one time test on January new users
 - 08_Tests_error_pages: test whether error page cost sales
+- 09_Potential_change: a test designed on landing pages of new users
 
 ## Setup
 Requires Python 3.11
