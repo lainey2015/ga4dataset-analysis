@@ -64,3 +64,13 @@ python -m ga4case.build_users
 5. Run 'analysis_notebooks' in the numbered order.
 
 6. Tested with a run from a fresh clone.
+
+## Use of AI
+AI assistance:
+- Data understanding and preparation: Claude helped to explore GA4 structure and initial data quality checks.
+- Analytical review: Claude and Codex assisted in challenging the analysis plan, identifying potential leakage and discussing results and experiment design.
+- Code development: Claude assisted with Python and SQL code, debugging, and documentation revision.
+- Presentation: Claude and Codex helped to structure findings and slides. Canva AI supported visual formatting.
+
+I defined the key concepts used in analysis, selected the analytical questions and final approach, fixed pass marks, reviewed and ran the code, check the reported results, and interpreted the findings and limitations. 
+
